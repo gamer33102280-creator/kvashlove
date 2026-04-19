@@ -1,165 +1,73 @@
+:root{
+    --dark: #000000;
+    --white: #FFFFFF;
+}
+
+.header {
+    height: 783px;
+    background-image: url("images/mesh\ gradient.jpeg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: "Allura", sans-serif;
+
+.header__container {
+    max-width: 1700px;
+    margin-inline: auto;
+    padding: 15px;
 }
 
-body, html {
-    width: 100%;
-    overflow-x: hidden;
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section {
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
+.header__list-item {
+    display: flex;
+    list-style: none;
+    gap: 360px;
+    margin: 0 auto;
 }
 
-.kiss {
+.header__link-list {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color:var(--white)
+}
+
+a {
+    text-decoration: none;
+}
+
+.white {
+    color:var(--dark);
+}
+
+.hero__image {
     position: absolute;
-    left: 1150px;
-    top: -20px;
-    transform: translateX(-50%);
-    width: 250px;
-    z-index: 1;
+    top: 263px;
+    left: 995px;
+    width: 540px;       
+    height: 520px; 
 }
 
-.cat, .vinyl, .ballons, .ballons__gray, .hand, .flowers {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+.hero__title {
     position: absolute;
-}
-
-.cat { left: 850px; top: 260px; }
-.vinyl { left: 1050px; top: 260px; }
-.ballons { left: 1250px; top: 260px; }
-.ballons__gray { left: 850px; top: 460px; }
-.hand { left: 1050px; top: 460px; }
-.flowers { left: 1250px; top: 460px; }
-
-.text-block {
-    position: absolute;
-    left: 58px;
-    top: 240px;
-    width: 750px;
-    height: 638px;
-    font-size: 60px;
-    line-height: 60px;
-    font-family: "Allura", cursive;
-    color: #ffffff;
-}
-
-.title {
-    position: absolute;
-    left: -30px;
-    top: 20px;
-    width: 1200px;
-    height: 148px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 1;
-    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 54px;
+    color:var(--white);
+    max-width: 680px; 
     text-align: center;
-    z-index: 2;
+    top: 300px;
+    left: 170px;
 }
-
-.second-text {
-    position: absolute;
-    left: 700px;
-    top: 170px;
-    width: 750px;
-    height: 638px;
-    font-size: 60px;
-    line-height: 60px;
-    font-family: "Allura", cursive;
-    color: #ffffff;
-    text-align: right;
-}
-
-.polaroid__one {
-    position: absolute;
-    width: 180px;
-    height: 250px;  
-    object-fit: cover;
-    left: 50px;
-    top: 50px;
-}
-
-.photo__1 {
-    position: absolute;
-    width: 150px;
-    height: 150px;  
-    object-fit: cover;
-    left: 65px;
-    top: 70px;
-}
-
-.polaroid__two {
-    position: absolute;
-    width: 180px;     
-    height: 250px;    
-    object-fit: cover;
-    left: 230px;
-    top: 274px;
-}
-
-.photo__2 {
-    position: absolute;
-    width: 150px;     
-    height: 150px;    
-    object-fit: cover;
-    left: 245px;
-    top: 295px;
-}
-
-.polaroid__three {
-    position: absolute;
-    width: 180px;     
-    height: 250px;    
-    object-fit: cover;
-    left: 410px;
-    top: 498px;
-}
-
-.photo__3 {
-    position: absolute;
-    width: 150px;     
-    height: 150px;    
-    object-fit: cover;
-    left: 425px;
-    top: 520px;
-}
-
-
-.minion__trio {
-    position: absolute;
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    cursor: grab;
-    user-select: none;
-    left: 0px;
-    top: 500px;
-
-}
-
-.minion__bal {
-    position: absolute;
-    width: 400px;
-    height: 450px;
-    object-fit: cover;
-    cursor: grab;
-    user-select: none;
-    left: 300px;
-    top: -40px;
-
-}
-
-
 
